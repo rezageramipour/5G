@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html
+  lang="fa"
+  dir="rtl"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="../bootstrap/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Sidebar -->
+        <nav class="col-md-2 sidebar d-flex flex-column">
+          <h3 class="text-center mb-4">BBDH Config Management</h3>
+
+          <!-- Accordion Menu -->
+          <div
+            class="accordion"
+            id="sidebarAccordion"
+          >
+            <!-- Home Item -->
+            <div class="accordion-item bg-transparent border-0">
+              <h2 class="accordion-header my-3 styleButton">
+                <span class="me-2">Home</span>
+              </h2>
+              <div
+                id="collapseHome"
+                class="accordion-collapse collapse"
+                data-bs-parent="#sidebarAccordion"
+              >
+                <div class="accordion-body p-0">
+                  <a href="#">Dashboard</a>
+                  <a href="#">User Settings</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- App Management Item -->
+            <div class="accordion-item bg-transparent border-0">
+              <h2 class="accordion-header my-3">
+                <button
+                  class="styleButton border-0 collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseAppManagement"
+                  aria-expanded="false"
+                  aria-controls="collapseAppManagement"
+                >
+                  <span class="ms-2">App Management</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-caret-left-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="collapseAppManagement"
+                class="accordion-collapse collapse"
+                data-bs-parent="#sidebarAccordion"
+              >
+                <div class="accordion-body p-0">
+                  <a href="#">Installed Apps</a>
+                  <a href="#">Add New App</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service Setting Item -->
+            <div class="accordion-item bg-transparent border-0">
+              <h2 class="accordion-header my-3">
+                <button
+                  class="styleButton border-0 collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseServiceSetting"
+                  aria-expanded="false"
+                  aria-controls="collapseServiceSetting"
+                >
+                  <span class="ms-2">Service Setting</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-caret-left-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="collapseServiceSetting"
+                class="accordion-collapse collapse"
+                data-bs-parent="#sidebarAccordion"
+              >
+                <div class="accordion-body p-0">
+                  <a href="#">Configuration</a>
+                  <a href="#">Network Settings</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-transparent border-0">
+              <h2 class="accordion-header my-3">
+                <button
+                  class="styleButton border-0 collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseEPC"
+                  aria-expanded="false"
+                  aria-controls="collapseEPC"
+                >
+                  <span class="ms-2">EPC</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-caret-left-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="collapseEPC"
+                class="accordion-collapse collapse"
+                data-bs-parent="#sidebarAccordion"
+              >
+                <div class="accordion-body p-0">
+                  <a href="#">Configuration</a>
+                  <a href="#">Network Settings</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-transparent border-0">
+              <h2 class="accordion-header my-3">
+                <button
+                  class="styleButton border-0 collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse5GC"
+                  aria-expanded="false"
+                  aria-controls="collapse5GC"
+                >
+                  <span class="ms-2">5GC</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-caret-left-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="collapse5GC"
+                class="accordion-collapse collapse"
+                data-bs-parent="#sidebarAccordion"
+              >
+                <div class="accordion-body p-0">
+                  <a href="#">Configuration</a>
+                  <a href="#">Network Settings</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-transparent border-0">
+              <h2 class="accordion-header my-3">
+                <button
+                  class="styleButton border-0 collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseRAN"
+                  aria-expanded="false"
+                  aria-controls="collapseRAN"
+                >
+                  <span class="ms-2">RAN</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-caret-left-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="collapseRAN"
+                class="accordion-collapse collapse"
+                data-bs-parent="#sidebarAccordion"
+              >
+                <div class="accordion-body p-0">
+                  <a href="#">Configuration</a>
+                  <a href="#">Network Settings</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-transparent border-0">
+              <h2 class="accordion-header my-3">
+                <button
+                  class="styleButton border-0 collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseManitoring"
+                  aria-expanded="false"
+                  aria-controls="collapseManitoring"
+                >
+                  <span class="ms-2">Manitoring</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-caret-left-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="collapseManitoring"
+                class="accordion-collapse collapse"
+                data-bs-parent="#sidebarAccordion"
+              >
+                <div class="accordion-body p-0">
+                  <a href="#">Configuration</a>
+                  <a href="#">Network Settings</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-transparent border-0">
+              <h2 class="accordion-header my-3">
+                <button
+                  class="styleButton border-0 collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSystemLog"
+                  aria-expanded="false"
+                  aria-controls="collapseSystemLog"
+                >
+                  <span class="ms-2">System Log</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-caret-left-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="collapseSystemLog"
+                class="accordion-collapse collapse"
+                data-bs-parent="#sidebarAccordion"
+              >
+                <div class="accordion-body p-0">
+                  <a href="#">Configuration</a>
+                  <a href="#">Network Settings</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Additional Items... -->
+            <!-- You can add other items like EPC, 5GC, RAN in a similar way -->
+
+            <!-- Logout -->
+            <a
+              href="#"
+              class="logout-link mt-auto mb-3 d-block"
+            >
+              <i class="bi bi-box-arrow-left ms-2"></i>Log Out
+            </a>
+          </div>
+        </nav>
+
+        <!-- Main Dashboard Content -->
+        <main class="col-md-10 dashboard-content">
+          <div
+            class="d-flex justify-content-between align-items-center mb-4 flex-wrap"
+          >
+            <div>
+              <input
+                type="text"
+                id="searchInput"
+                class="form-control search-input"
+                placeholder="جستوجو کنید..."
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="currentColor"
+                class="bi bi-search search-icon"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                />
+              </svg>
+              <ul
+                id="suggestionsList"
+                class="suggestions list-unstyled d-none"
+              ></ul>
+            </div>
+            <div class="d-flex">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="45"
+                height="45"
+                fill="currentColor"
+                class="bi bi-person-check"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4"
+                />
+                <path
+                  d="M8.256 14a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div>
+            <h2 class="mb-3 mb-md-0">Dashboard</h2>
+          </div>
+
+          <div class="card-main mb-4">
+            <h3>Config Management</h3>
+            <p>Config and view settings of 4G/5G core and RAN</p>
+          </div>
+
+          <div class="row">
+            <div class="info-box host col-md-3 col-12 me-3">
+              <h5>Host Name</h5>
+              <p>192.168.11.152</p>
+            </div>
+            <div class="info-box ip col-md-3 col-12 me-3">
+              <h5>IP Address</h5>
+              <p>192.168.11.152:6363</p>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script src="../bootstrap/js/bootstrap.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

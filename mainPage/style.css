@@ -1,0 +1,133 @@
+/* Sidebar Styling */
+.sidebar {
+  background-color: #2d3e50;
+  border-radius: 30px 0 0 30px;
+  color: #fff;
+  height: 100vh;
+  padding-top: 20px;
+  padding-right: 10px;
+  -webkit-border-radius: 30px 0 0 30px;
+  -moz-border-radius: 30px 0 0 30px;
+  -ms-border-radius: 30px 0 0 30px;
+  -o-border-radius: 30px 0 0 30px;
+}
+.sidebar .accordion-button {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #2d3e50;
+}
+.sidebar .accordion-button:not(.collapsed) {
+  background-color: #1a2b3c;
+}
+.sidebar .accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-body a {
+  padding: 8px 30px; /* Spacing for submenu items */
+  display: block;
+  text-align: right;
+  color: #d1d1d1;
+  text-decoration: none;
+}
+.accordion-body a:hover {
+  background-color: #1a2b3c;
+  color: #fff;
+}
+.dashboard-content {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+.info-box {
+  border-radius: 8px;
+  padding: 20px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.info-box.host {
+  background-color: #ffc107;
+}
+.info-box.ip {
+  background-color: #007bff;
+}
+.card-main {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  border-right: 5px solid #007bff;
+}
+.logout-link {
+  position: absolute;
+  bottom: 10px;
+  right: 95px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 0;
+}
+.logout-link:hover {
+  color: #ffc107;
+}
+.styleButton {
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 15px;
+  color: white;
+}
+
+/* searchbox */
+.search-input {
+  width: 400px;
+  padding: 12px 50px 12px 15px;
+  border-radius: 50px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.search-input:focus {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-color: #007bff;
+}
+.search-icon {
+  position: absolute;
+  top: 45px;
+  right: 295px;
+  transform: translateY(-50%);
+  color: #007bff;
+  cursor: pointer;
+}
+.suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.suggestions li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.suggestions li:hover {
+  background-color: #f1f1f1;
+}
+.suggestions li.active {
+  background-color: #e9ecef;
+}
+
+/* person icon */
+.bi-person-check {
+    cursor: pointer;
+}
